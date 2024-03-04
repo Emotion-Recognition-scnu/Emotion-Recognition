@@ -25,7 +25,10 @@ NMS：非极大值抑制
 
 P-Net（Proposal Network, 建议网络）：P-Net得到人脸区域的候选网络，给出了人脸区域的候选框和边界框的回归向量。基于预测边界框回归向量对候选框进行矫正，并用NMS来合并重叠率高的候选框。
 
- 使用python实现P-Net的代码如下： ![image](https://github.com/SCNUSuJun/Emotion-Recognition/assets/156908467/74a84322-a150-4a8b-a29d-d41abd1fab98)
+ 使用python实现P-Net的代码如下： 
+
+ 
+ ![image](https://github.com/SCNUSuJun/Emotion-Recognition/assets/156908467/74a84322-a150-4a8b-a29d-d41abd1fab98)
 
 
 
@@ -74,7 +77,7 @@ Channel-Refined  Feature：通道精细化特征
 
   使用通道注意力主要分为以下几个步骤：     
 
-​     <img width="598" alt="image" src="https://github.com/SCNUSuJun/Emotion-Recognition/assets/156908467/c2d6a082-810e-43d5-81e7-73eac0e50c1e">
+​<img width="598" alt="image" src="https://github.com/SCNUSuJun/Emotion-Recognition/assets/156908467/c2d6a082-810e-43d5-81e7-73eac0e50c1e">
 
 
 ### 2.2.2  空间注意力模块  
@@ -147,10 +150,13 @@ Norm：归一化操作
 
 ### 2.3.3  位置编码      
 
-  与传统CNN不同，Transformer需要位置编码来编码每个词向量的位置信息。为了更好区分不同位置的关键点之间的差异以便更好地训练，本项目将位置编码加入Transformer Layer底部的输入词嵌入中（即结构图中的Position  Embedding）。位置编码与关键点嵌入向量具有相同的维度，将二者相加，并使用不同频率的正弦和余弦函数构造Position Embedding，用公式表示：  <img width="353" alt="image" src="https://github.com/SCNUSuJun/Emotion-Recognition/assets/156908467/66c86285-d958-4339-bc01-f6b99b9aca73">
+  与传统CNN不同，Transformer需要位置编码来编码每个词向量的位置信息。为了更好区分不同位置的关键点之间的差异以便更好地训练，本项目将位置编码加入Transformer Layer底部的输入词嵌入中（即结构图中的Position  Embedding）。位置编码与关键点嵌入向量具有相同的维度，将二者相加，并使用不同频率的正弦和余弦函数构造Position Embedding，用公式表示：  
+<img width="353" alt="image" src="https://github.com/SCNUSuJun/Emotion-Recognition/assets/156908467/66c86285-d958-4339-bc01-f6b99b9aca73">
  
  其中： 
- <img width="612" alt="image" src="https://github.com/SCNUSuJun/Emotion-Recognition/assets/156908467/85b1ddd6-efcf-483f-89a2-9f6fb8d5e7c7">
+
+
+<img width="612" alt="image" src="https://github.com/SCNUSuJun/Emotion-Recognition/assets/156908467/85b1ddd6-efcf-483f-89a2-9f6fb8d5e7c7">
 
 
 <img width="604" alt="image" src="https://github.com/SCNUSuJun/Emotion-Recognition/assets/156908467/258ed353-12be-408b-a404-286a2f03bd39">
